@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <style>
+    .subfig { font: bold 16px sans-serif; }
+    .label { font: 12px sans-serif; }
+    .node { fill: #ffffff; stroke: #000000; stroke-width: 1px; }
+    .used { fill: #cce5ff; }
+    .unused { fill: #eeeeee; }
+    .edge-used { stroke: #0074d9; stroke-width: 2px; }
+    .edge-unused { stroke: #aaaaaa; stroke-width: 1px; stroke-dasharray: 4 2; }
+  </style>
+  <!-- (a) GraphRAG -->
+  <g transform="translate(0,0)">
+    <text x="150" y="20" class="subfig">(a) GraphRAG</text>
+    <!-- edges -->
+    <line x1="150" y1="100" x2="80" y2="160" class="edge-used"/>
+    <line x1="150" y1="100" x2="220" y2="160" class="edge-used"/>
+    <line x1="150" y1="100" x2="150" y2="200" class="edge-unused"/>
+    <line x1="150" y1="100" x2="220" y2="40" class="edge-unused"/>
+    <!-- nodes -->
+    <circle cx="150" cy="100" r="25" class="node used"/>
+    <text x="150" y="105" text-anchor="middle" class="label">Crude Oil</text>
+    <circle cx="80" cy="160" r="20" class="node used"/>
+    <text x="80" y="165" text-anchor="middle" class="label">Gasoline</text>
+    <circle cx="220" cy="160" r="20" class="node used"/>
+    <text x="220" y="165" text-anchor="middle" class="label">Diesel</text>
+    <circle cx="150" cy="200" r="20" class="node unused"/>
+    <text x="150" y="205" text-anchor="middle" class="label">Naphtha</text>
+    <circle cx="220" cy="40" r="20" class="node unused"/>
+    <text x="220" y="45" text-anchor="middle" class="label">Butane</text>
+  </g>
+
+  <!-- (b) LightRAG -->
+  <g transform="translate(400,0)">
+    <text x="150" y="20" class="subfig">(b) LightRAG</text>
+    <!-- edges -->
+    <line x1="150" y1="100" x2="80" y2="160" class="edge-used"/>
+    <line x1="150" y1="100" x2="220" y2="160" class="edge-used"/>
+    <line x1="150" y1="100" x2="150" y2="200" class="edge-unused"/>
+    <line x1="150" y1="100" x2="220" y2="40" class="edge-unused"/>
+    <!-- nodes -->
+    <circle cx="150" cy="100" r="25" class="node used"/>
+    <text x="150" y="105" text-anchor="middle" class="label">Natural Gas</text>
+    <circle cx="80" cy="160" r="20" class="node used"/>
+    <text x="80" y="165" text-anchor="middle" class="label">LNG</text>
+    <circle cx="220" cy="160" r="20" class="node used"/>
+    <text x="220" y="165" text-anchor="middle" class="label">Power</text>
+    <circle cx="150" cy="200" r="20" class="node unused"/>
+    <text x="150" y="205" text-anchor="middle" class="label">Ammonia</text>
+    <circle cx="220" cy="40" r="20" class="node unused"/>
+    <text x="220" y="45" text-anchor="middle" class="label">Methanol</text>
+  </g>
+
+  <!-- (c) PathRAG -->
+  <g transform="translate(800,0)">
+    <text x="150" y="20" class="subfig">(c) PathRAG</text>
+    <!-- edges -->
+    <line x1="150" y1="100" x2="80" y2="160" class="edge-used"/>
+    <line x1="150" y1="100" x2="220" y2="160" class="edge-used"/>
+    <line x1="150" y1="100" x2="150" y2="200" class="edge-used"/>
+    <line x1="150" y1="100" x2="220" y2="40" class="edge-unused"/>
+    <!-- nodes -->
+    <circle cx="150" cy="100" r="25" class="node used"/>
+    <text x="150" y="105" text-anchor="middle" class="label">Ethylene</text>
+    <circle cx="80" cy="160" r="20" class="node used"/>
+    <text x="80" y="165" text-anchor="middle" class="label">Propylene</text>
+    <circle cx="220" cy="160" r="20" class="node used"/>
+    <text x="220" y="165" text-anchor="middle" class="label">Polyethylene</text>
+    <circle cx="150" cy="200" r="20" class="node used"/>
+    <text x="150" y="205" text-anchor="middle" class="label">Polypropylene</text>
+    <circle cx="220" cy="40" r="20" class="node unused"/>
+    <text x="220" y="45" text-anchor="middle" class="label">Styrene</text>
+  </g>
+</svg>
